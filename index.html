@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Solo porque te amo ❤️</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Caveat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <canvas id="cv" aria-hidden="true"></canvas>
+    <div id="bar"></div>
+    <button id="snd" class="hide" aria-label="Sonido">🎵</button>
+
+    <section class="scene on">
+      <div class="orb fa">❤️</div>
+      <h1 class="fa gold">Solo porque te amo</h1>
+      <p class="soft fa">
+        Hoy no es una fecha especial. Es un día normal, y quería que supieras cuánto te quiero, mi
+        chiquita.
+      </p>
+      <p class="hand fa">Toca para comenzar</p>
+    </section>
+
+    <section class="scene">
+      <h2 class="fa">Antes de ti</h2>
+      <p class="rv">Antes de ti yo creía que sabía lo que era ser feliz.</p>
+      <p class="rv">Pero era una felicidad pequeña, tranquila, sin color.</p>
+      <p class="rv soft">Y entonces apareciste tú.</p>
+    </section>
+
+    <section class="scene">
+      <h2 class="fa">Un 5 de octubre</h2>
+      <p class="rv">Ese día, sin saberlo, mi vida cambió para siempre.</p>
+      <div class="count fa">
+        <div><b id="d">0</b><span>días</span></div>
+        <div><b id="h">0</b><span>horas</span></div>
+        <div><b id="m">0</b><span>min</span></div>
+        <div><b id="s">0</b><span>seg</span></div>
+      </div>
+      <p class="soft fa" id="lbl"></p>
+    </section>
+
+    <section class="scene" data-sea="1">
+      <h2 class="fa">Ballenita</h2>
+      <div class="pol fa" style="--r: -3deg">
+        <div>
+          <img src="img/ballenita.jpg" alt="Nuestra primera foto en Ballenita" loading="lazy" />
+        </div>
+      </div>
+      <p class="rv">
+        Una playa, tú a mi lado y una foto que todavía no sabía que sería el comienzo de todo.
+      </p>
+    </section>
+
+    <section class="scene" data-sea="1">
+      <h2 class="fa">Lo que sentí</h2>
+      <p class="rv">Recuerdo el ruido del mar, el viento y los nervios.</p>
+      <p class="rv">Y recuerdo mirarte y pensar que ojalá ese momento no se acabara nunca.</p>
+      <p class="rv soft">Todavía pienso lo mismo cada vez que te veo.</p>
+    </section>
+
+    <section class="scene">
+      <h2 class="fa">Mes tras mes</h2>
+      <div class="months" id="mo"></div>
+      <p class="rv">
+        Mes tras mes, entre risas, abrazos y mensajes a cualquier hora, sigo eligiéndote. Sin fecha
+        especial, sin motivo, solo porque quiero.
+      </p>
+    </section>
+
+    <section class="scene">
+      <h2 class="fa">Nuestros momentos</h2>
+      <div class="fan fa">
+        <div class="pol" style="--r: -7deg">
+          <div><img src="img/nosotros.jpg" alt="Nosotros" loading="lazy" /></div>
+        </div>
+        <div class="pol" style="--r: 2deg; z-index: 2">
+          <div>
+            <img src="img/manos_playa.jpg" alt="Nuestras manos en la playa" loading="lazy" />
+          </div>
+        </div>
+        <div class="pol" style="--r: 8deg">
+          <div><img src="img/manos1.jpg" alt="Nuestras manos" loading="lazy" /></div>
+        </div>
+      </div>
+      <p class="rv">Cada una de estas fotos guarda un pedacito de lo que somos.</p>
+    </section>
+
+    <section class="scene">
+      <h2 class="fa">Lo que admiro de ti</h2>
+      <div class="tags fa">
+        <span style="--k: 0">tu ternura</span><span style="--k: 1">tu risa</span
+        ><span style="--k: 2">tu mirada</span><span style="--k: 3">tu forma de ser</span
+        ><span style="--k: 4">tu paciencia</span><span style="--k: 5">todo</span>
+      </div>
+      <p class="rv">
+        Admiro todo de ti, chiquita. Eres linda por dentro y por fuera, y no hay una sola cosa que
+        cambiaría.
+      </p>
+    </section>
+
+    <section class="scene">
+      <h2 class="fa">Lo pequeño</h2>
+      <p class="rv">Lo que más amo no son los grandes momentos.</p>
+      <p class="rv">
+        Es tu voz cuando me hablas bajito, tu risa cuando algo te da vergüenza, la forma en que me
+        buscas con la mirada.
+      </p>
+      <p class="rv soft">Son esas cosas chiquitas las que me enamoran todos los días.</p>
+    </section>
+
+    <section class="scene">
+      <h2 class="fa">Cuando todo pesa</h2>
+      <p class="rv">Contigo hasta los días difíciles se sienten más livianos.</p>
+      <p class="rv">Tú eres mi calma, mi lugar seguro, la persona a la que quiero contarle todo.</p>
+      <p class="rv soft">Gracias por ser mi casa.</p>
+    </section>
+
+    <section class="scene">
+      <h2 class="fa">Lo que aprendí contigo</h2>
+      <p class="rv">Aprendí que el amor es paciencia y que se demuestra con detalles.</p>
+      <p class="rv">Aprendí que quedarse a escuchar vale más que mil regalos.</p>
+      <p class="rv soft">Y aprendí que a tu lado quiero ser mejor persona.</p>
+    </section>
+
+    <section class="scene">
+      <h2 class="fa">Más de nosotros</h2>
+      <div class="fan fa">
+        <div class="pol" style="--r: -5deg">
+          <div><img src="img/playa.jpg" alt="La playa" loading="lazy" /></div>
+        </div>
+        <div class="pol" style="--r: 6deg">
+          <div><img src="img/letras_playa.jpg" alt="Letras en la playa" loading="lazy" /></div>
+        </div>
+      </div>
+      <p class="rv">Y todavía nos faltan mil fotos por tomarnos.</p>
+    </section>
+
+    <section class="scene">
+      <h2 class="fa">Te prometo</h2>
+      <p class="rv">Prometo cuidarte cuando estés cansada.</p>
+      <p class="rv">Prometo escucharte aunque ya me hayas contado la historia.</p>
+      <p class="rv">Prometo hacerte reír aunque sea con mis chistes malos.</p>
+      <p class="rv">Y prometo elegirte cada vez que tenga que elegir.</p>
+    </section>
+
+    <section class="scene">
+      <h2 class="fa">Una carta para ti</h2>
+      <p class="rv">
+        Mi chiquita: hoy no es un día especial. No hay aniversario ni cumpleaños. Y justo por eso
+        quería escribirte.
+      </p>
+      <p class="rv">
+        Quería que supieras que no necesito una fecha para amarte. Te amo en un día cualquiera, con
+        sueño, con prisa, con hambre, y también cuando no estás cerca.
+      </p>
+    </section>
+
+    <section class="scene">
+      <h2 class="fa">Una carta para ti</h2>
+      <p class="rv">
+        Gracias por cada abrazo, por cada llamada, por cada vez que me elegiste aunque yo no me lo
+        mereciera.
+      </p>
+      <p class="rv">
+        Si algún día dudas de lo que vales, acuérdate de que hay alguien que te ama con todo lo que
+        tiene.
+      </p>
+      <p class="hand fa">Con todo mi corazón, José</p>
+    </section>
+
+    <section class="scene">
+      <h2 class="fa">Y si me preguntan…</h2>
+      <p class="rv">Si me preguntan cuál es lo mejor de mis días, no tengo que pensarlo.</p>
+      <p class="rv">Fuiste tú. Siempre tú.</p>
+    </section>
+
+    <section class="scene">
+      <div class="orb fa">❤️</div>
+      <h1 class="fa gold">Te amo, chiquita</h1>
+      <p class="hand fa">Solo porque sí, y porque eres tú.</p>
+      <p class="soft fa">Hoy, mañana y todos los días.</p>
+    </section>
+
+    <button id="next">Continuar</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
